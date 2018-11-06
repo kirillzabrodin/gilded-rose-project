@@ -1,8 +1,9 @@
 require 'normal_item'
+require 'item_basic'
 
 describe NormalItem do
 
-  it_behaves_like BikeContainer
+  it_behaves_like ItemBasic
 
   it 'decreases quality by 1 when in date' do
     expect {subject.update_quality}.to change{subject.quality}.by(-1)
