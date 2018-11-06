@@ -1,3 +1,5 @@
+require 'normal_item'
+
 class GildedRose
 
   def initialize(items)
