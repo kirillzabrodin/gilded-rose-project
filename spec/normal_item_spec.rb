@@ -1,5 +1,5 @@
-require 'item_basic'
 require 'normal_item'
+require 'item_basic'
 
 describe NormalItem do
 

@@ -1,5 +1,5 @@
-require 'item_basic'
 require 'ticket'
+require 'item_basic'
 
 describe Ticket do
 
@@ -36,5 +36,5 @@ describe Ticket do
   it 'changes sell_in by -1' do
     expect{subject.update_sell_in}.to change{subject.sell_in}.by(-1)
   end
-  
+
 end

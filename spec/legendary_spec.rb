@@ -1,5 +1,5 @@
-require 'item_basic'
 require 'legendary'
+require 'item_basic'
 
 describe Legendary do
 

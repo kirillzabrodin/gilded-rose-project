@@ -1,5 +1,5 @@
-require 'item_basic'
 require 'unnormal_item'
+require 'item_basic'
 
 describe GrowItem do
 
