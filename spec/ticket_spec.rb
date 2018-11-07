@@ -1,4 +1,4 @@
-require 'normal_item'
+require 'item_basic'
 require 'ticket'
 
 describe Ticket do
@@ -32,4 +32,9 @@ describe Ticket do
     subject.quality = 50
     expect{subject.update_quality}.to change{subject.quality}.by(0)
   end
+
+  it 'changes sell_in by -1' do
+    expect{subject.update_sell_in}.to change{subject.sell_in}.by(-1)
+  end
+  
 end

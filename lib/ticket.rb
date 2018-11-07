@@ -5,8 +5,12 @@ class Ticket
   include ItemBasic
 
   def update_quality
-    @quality - lost_quality > 50 ? quality = 50 - @quality : quality = lost_quality
+    @quality - lost_quality > 50 ? quality = @quality - 50 : quality = lost_quality
     @quality -= quality
+  end
+
+  def update_sell_in
+    @sell_in -= 1
   end
 
   private

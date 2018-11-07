@@ -1,5 +1,5 @@
-require 'normal_item'
 require 'item_basic'
+require 'normal_item'
 
 describe NormalItem do
 
@@ -19,5 +19,9 @@ describe NormalItem do
   it 'can not have a negative quality' do
     subject.quality = 0
     expect{subject.update_quality}.to change{subject.quality}.by(0)
+  end
+
+  it 'changes sell_in by -1' do
+    expect{subject.update_sell_in}.to change{subject.sell_in}.by(-1)
   end
 end

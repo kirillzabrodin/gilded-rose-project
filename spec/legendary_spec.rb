@@ -1,4 +1,4 @@
-require 'normal_item'
+require 'item_basic'
 require 'legendary'
 
 describe Legendary do

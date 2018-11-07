@@ -10,6 +10,10 @@ class NormalItem
     @quality -= lost_quality
   end
 
+  def update_sell_in
+    @sell_in -= 1
+  end
+
   private
 
   def in_date?
