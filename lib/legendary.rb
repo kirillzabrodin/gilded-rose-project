@@ -8,4 +8,8 @@ class Legendary
     @quality
   end
 
+  def update_sell_in
+    @sell_in
+  end
+
 end
